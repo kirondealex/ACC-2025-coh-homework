@@ -1,0 +1,258 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNHlX8SSXGKQrFeE96OnaWC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kirondealex/ACC-2025-coh-homework/blob/main/22nd%20Feb%2025%20class\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ic-fWwhLS_Yt",
+        "outputId": "75ddaa4c-3a11-4c97-8ee1-ea4ebbdfbc10"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "kirondeAlex\n"
+          ]
+        }
+      ],
+      "source": [
+        "my_name = \"kironde\"\n",
+        "second_name = \"Alex\"\n",
+        "string_concate = my_name + second_name\n",
+        "print(string_concate)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# string formating\n",
+        "#.format insert words\n",
+        "print(\"These are the colors  {},{},{}\".format(\"red\",\"green\",\"blue\"))"
+      ],
+      "metadata": {
+        "id": "Z35bSodQXnHT",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8e7db788-f773-4562-a4c5-c0d083116b6a"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  red,green,blue\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"These are the colors  {}\".format(\"red\",\"green\",\"blue\"))"
+      ],
+      "metadata": {
+        "id": "EymzaXufZxgX",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "32833f97-ab22-49bd-c4d2-71ba091beb17"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  red\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"These are the colors  {0},{0},{0}\".format(\"red\",\"green\",\"blue\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4jq1nNfWaWuF",
+        "outputId": "2f9497aa-b3c3-4394-c637-82d2c58afb4e"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  red,red,red\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"These are the colors  {1},{1},{1}\".format(\"red\",\"green\",\"blue\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XUtlhq5BahKL",
+        "outputId": "e3dcb746-a104-43c4-aca3-903a2736fa45"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  green,green,green\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"These are the colors  {a},{b},{c}\".format(a=\"red\",b=\"green\",c=\"blue\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U_lrnoH8ao7L",
+        "outputId": "5d313c0d-6512-4e96-faf7-666bb187ee19"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  red,green,blue\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"These are the colors  {0},{1},{1}\".format(\"red\",\"green\",\"blue\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BnDxZccOa8sB",
+        "outputId": "a86f244e-7899-464a-95b7-0153d8a2279b"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  red,green,green\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"These are the colors  {0},{1},{0}\".format(\"red\",\"green\",\"blue\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o8XTwG_3cCpu",
+        "outputId": "e9f18555-4bea-41df-b323-fccdabe6fcc4"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "These are the colors  red,green,red\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"Hello\"\n",
+        "y =\"WOrld\"\n",
+        "string_concate = x +\"\" + y"
+      ],
+      "metadata": {
+        "id": "-PvYVcMkcPVE"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = \"Hello\"\n",
+        "y =\"WOrld\"\n",
+        "string_concate = x * 1+ y\n",
+        "print(string_concate)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7Fgyj5oncsyt",
+        "outputId": "0940c1ea-c948-4876-d00d-a4d0d73ddeb9"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HelloWOrld\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
